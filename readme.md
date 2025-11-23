@@ -63,13 +63,3 @@ O fluxo é dividido em três ramificações principais após a decodificação d
 | **Extract Temp / Qualidade do Ar** | **Dashboard:** Extrai os valores e os exibe nos medidores (`ui_gauge`) no Dashboard, provando o **Monitoramento em tempo real**. |
 | **Interruptor: Ar Ruim > 500ppm** | **Lógica Disruptiva:** O núcleo da inteligência. Checa a condição crítica: `payload.air_quality_ppm > 500`. Se **verdadeiro**, aciona a ação de alerta. |
 | **HTTP POST: Alerta Carreira** | **Ação (Protocolo HTTP):** Envia o alerta formatado via **HTTP POST** para um endpoint simulado, comprovando a execução de ações e o uso do protocolo HTTP. |
-
----
-
-## 5. Vídeo de Apresentação
-
-O vídeo de no máximo 3 minutos deve demonstrar a **cadeia completa** e o acionamento da Lógica Disruptiva:
-
-1.  **Demonstração do Dashboard:** Mostrar o painel (`/ui`) com os Gauges atualizando.
-2.  **Acionamento da Lógica:** Alterar o sensor MQ-135 no Wokwi para que o **PPM suba acima de 500**.
-3.  **Prova da Ação:** Mostrar o fluxo no Node-RED acionando o nó **`HTTP POST: Alerta Carreira`** e a mensagem de execução aparecendo na aba Debug.
