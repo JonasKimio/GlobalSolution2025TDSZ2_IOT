@@ -1,4 +1,12 @@
 # WorkFlow Adaptive System (WAS)
+## Integrantes do Grupo
+
+| Nome Completo | RM |
+| :--- | :--- |
+| Jonas Kimio Isiki | 560560 |
+| Daniel Kendi Saijo Araki | 553043 |
+| Marcos Vinicius Alves Marques | 560475 |
+---
 
 ## 1. Informações do Projeto
 
