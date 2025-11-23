@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "author": "Jonas Kimio Isiki",
+  "editor": "wokwi",
+  "parts": [
+    { 
+      "type": "board-esp32-devkit-c-v4", 
+      "id": "esp", 
+      "top": 0, 
+      "left": 0, 
+      "attrs": {} 
+    },
+    {
+      "type": "analog-gas-sensor",
+      "id": "mq135",
+      "top": -150,
+      "left": 200,
+      "attrs": { "model": "MQ-135" }
+    },
+    {
+      "type": "dht22",
+      "id": "dht",
+      "top": -150,
+      "left": 400,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ], 
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    
+    [ "mq135:GND", "esp:GND.1", "black", [] ],
+    [ "mq135:VCC", "esp:3V3", "red", [] ],
+    [ "mq135:A0", "esp:A3", "green", [ "v0" ] ], 
+
+    [ "dht:VCC", "esp:3V3", "red", [] ],
+    [ "dht:GND", "esp:GND.2", "black", [] ],
+    [ "dht:DATA", "esp:D13", "blue", [ "v0" ] ] 
+  ],
+  "dependencies": {}
+}
