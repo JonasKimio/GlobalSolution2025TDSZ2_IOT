@@ -17,7 +17,7 @@
 | **Gateway Utilizado** | Node-RED (para Processamento, Lógica Disruptiva e Dashboard) |
 | **Protótipo** | ESP32 (Simulado no Wokwi) com sensores DHT (Temperatura) e MQ-135 (Qualidade do Ar) |
 | **Status do Dashboard** | **Funcional (Node-RED Dashboard)** |
-| **Link do Vídeo** | [INSERIR LINK DO VÍDEO NO YOUTUBE AQUI] |
+| **Link do Vídeo** | https://youtu.be/CVA38GoIVZ4 |
 
 ---
 
